@@ -1,6 +1,29 @@
 # LumenX vX.Y.Z 发布说明
 
 📅 发布日期: YYYY-MM-DD  
+📖 版本类型: 稳定/测试/开发
+
+## 🆕 新特性
+- [ ] 新增功能1
+- [ ] 新增功能2
+
+## 🐞 修复问题
+- [ ] 修复 #123（问题描述）
+- [ ] 修复内核崩溃问题
+
+##⚠️ 已知问题
+- [ ] 暂不支持龙芯架构
+- [ ] 部分显卡驱动兼容性问题
+
+## 📥 下载
+文件|SHA256
+---|---
+[lumenx-X.Y.Z.iso](下载链接) | `xxxx...`
+
+## 🔄 升级指南
+# LumenX vX.Y.Z 发布说明
+
+📅 发布日期: YYYY-MM-DD  
 🔖 版本类型: Stable/Beta/Alpha
 
 ## 🆕 新特性
@@ -21,3 +44,10 @@
 [lumenx-X.Y.Z.iso](下载链接) | `xxxx...`
 
 ## 🔄 升级指南
+bash
+
+sudo apt update && sudo apt full-upgrade
+
+## 🙏 致谢
+特别感谢以下贡献者：
+@username1, @username2
