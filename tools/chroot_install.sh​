@@ -1,0 +1,23 @@
+#!/bin/bash
+# 描述：在chroot环境中安装基础软件包
+# 用法：sudo ./tools/chroot_install.sh [根文件系统路径]
+
+ROOTFS=${1:-"../rootfs"}
+
+if [ ! -d "${ROOTFS}" ]; then
+    echo "错误：根文件系统目录不存在"
+    exit 1
+fi
+
+# 复制DNS配置
+cp /etc/resolv.conf ${ROOTFS}/etc/
+
+# 进入chroot环境执行命令
+chroot ${ROOTFS} /bin/bash <<EOF
+apt update
+apt install -y --no-install-recommends \
+    systemd \
+    network-manager \
+    sudo \
+    nano
+EOF
