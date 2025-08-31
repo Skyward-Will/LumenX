@@ -1,0 +1,56 @@
+# 内核编译产生的文件
+*.o
+*.ko
+*.mod
+*.cmd
+*.order
+*.symvers
+*.bin
+*.elf
+*.img
+*.gz
+*.xz
+
+# 目录类忽略
+/build/
+/target/
+/iso/
+/rootfs/
+/tmp/
+/.tmp_versions/
+/cache/
+
+# 配置文件类（可根据需要取消注释）
+# /configs/local.config
+# /src/kernel/.config
+
+# 编辑器临时文件
+.*.swp
+*~
+*.bak
+*.tmp
+
+# 版本控制系统元数据
+/.git/
+/.svn/
+
+# 包管理相关
+*.deb
+*.rpm
+*.tar.gz
+*.zip
+
+# QEMU/KVM 虚拟机文件
+*.qcow2
+*.vmdk
+*.vdi
+
+# 日志文件
+*.log
+*.dmesg
+
+# 用户生成文档（可取消注释）
+# /docs/user_notes.md
+
+# 本地开发脚本（非正式工具）
+/local_*.sh
